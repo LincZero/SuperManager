@@ -1,0 +1,12 @@
+#ifndef TEXTMODULE_GLOBAL_H
+#define TEXTMODULE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(TEXTMODULE_LIBRARY)
+#  define TEXTMODULE_EXPORT Q_DECL_EXPORT
+#else
+#  define TEXTMODULE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TEXTMODULE_GLOBAL_H
